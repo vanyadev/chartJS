@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Chart.js</title>
+  </head>
+  <body>
+    <div class="chartCard">
+      <div class="chartBox">
+        <p>Line chart</p>
+        <canvas id="lineChart"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Line chart with dots</p>
+        <canvas id="dottedLine"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Bar chart</p>
+        <canvas id="anotherBarChart"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Horizontal chart</p>
+        <canvas id="horizontalBar"></canvas>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+          "
+        >
+          <button class="button" onclick="toggleFinancials('tax')">Tax</button>
+          <button class="button" onclick="toggleFinancials('budget')">
+            Budget
+          </button>
+          <button class="button" onclick="toggleFinancials('cost')">
+            Cost
+          </button>
+        </div>
+      </div>
+
+      <div class="chartBox">
+        <p>Bar chart with Grid</p>
+        <canvas id="verticalBar"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Several bar charts</p>
+        <canvas id="severalBarCharts"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>weekly bar chart</p>
+        <canvas id="weeklyChart"></canvas>
+        <div
+          style="
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+          "
+        >
+          <button class="button" id="previousButton" onclick="weekData(-6, -6)">
+            Previous
+          </button>
+          <button class="button" id="nextButton" onclick="weekData(6, 6)">
+            Next
+          </button>
+        </div>
+      </div>
+
+      <div class="chartBox">
+        <p>Bar chart in center</p>
+        <canvas id="temperatureBar"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Coordinates chart</p>
+        <canvas id="totalSales"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Pie chart</p>
+        <canvas id="pieChart"></canvas>
+      </div>
+
+      <div class="chartBox">
+        <p>Pie chart with links</p>
+        <canvas id="linkPieChart"></canvas>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="charts/lineChart.js"></script>
+    <script src="charts/horizontalBar.js"></script>
+    <script src="charts/verticalBar.js"></script>
+    <script src="charts/totalSales.js"></script>
+    <script src="charts/temperatureBar.js"></script>
+    <script src="charts/pieChart.js"></script>
+    <script src="charts/severalBarCharts.js"></script>
+    <script src="charts/dottedLine.js"></script>
+    <script src="charts/anotherBarChart.js"></script>
+    <script src="charts/linkPieChart.js"></script>
+    <script src="charts/weeklyChart.js"></script>
+  </body>
+</html>
