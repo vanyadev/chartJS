@@ -18,7 +18,8 @@
 }
 
 .chartBox {
-  width: 700px;
+  max-width: 1000px;
+  width: 80vw;
   padding: 20px;
   border-radius: 20px;
   border: solid 3px rgba(75, 192, 192, 1);
